@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ACME Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="logo">
+      <img src="logo.svg">
+    </a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Live and On-Demand</h1>
+      <p>Professional Training</p>
+    </div>
+  </div>
+  <div style="max-width: 1200px; padding: 0 20px 0 20px; margin: 0 auto;">
+    <div>
+      <h1>Featured Courses</h1>
+      <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="https://via.placeholder.com/500x250.png?text=Placeholder" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>Course Title</h2>
+            <p class="title">Lorem Ipsum</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><button class="button">Register</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="https://via.placeholder.com/500x250.png?text=Placeholder" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Course Title</h2>
+            <p class="title">Lorem Ipsum</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><button class="button">Register</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="https://via.placeholder.com/500x250.png?text=Placeholder" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Course Title</h2>
+            <p class="title">Lorem Ipsum</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><button class="button">Register</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="solid">
+  <h1>The Process</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus scelerisque urna, eget faucibus massa pharetra ut. Nulla nec diam vitae velit volutpat laoreet. Duis non velit nec velit consequat porttitor. Pellentesque auctor, felis ac ultricies auctor, lacus lorem mollis lectus, a placerat nibh quam id dui.</p>
+  <div style="width: 100%">
+    <button type="button" class="collapsible">Registration</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus scelerisque urna, eget faucibus massa pharetra ut. Nulla nec diam vitae velit volutpat laoreet. Duis non velit nec velit consequat porttitor. Pellentesque auctor, felis ac ultricies auctor, lacus lorem mollis lectus, a placerat nibh quam id dui.</p>
+    </div>
+    <button type="button" class="collapsible">Taking a Course</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus scelerisque urna, eget faucibus massa pharetra ut. Nulla nec diam vitae velit volutpat laoreet. Duis non velit nec velit consequat porttitor. Pellentesque auctor, felis ac ultricies auctor, lacus lorem mollis lectus, a placerat nibh quam id dui.</p>
+    </div>
+    <button type="button" class="collapsible">Graduating</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus scelerisque urna, eget faucibus massa pharetra ut. Nulla nec diam vitae velit volutpat laoreet. Duis non velit nec velit consequat porttitor. Pellentesque auctor, felis ac ultricies auctor, lacus lorem mollis lectus, a placerat nibh quam id dui.</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div class="col">
+      <h3>Contact</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>info@acmelearning.com</p>
+    </div>
+    <div class="col">
+      <h3>About ACME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus scelerisque urna, eget faucibus massa pharetra ut. Nulla nec diam vitae velit volutpat laoreet. Duis non velit nec velit consequat porttitor.</p>
+    </div>
+    <div class="col">
+      <h3>Learning Resources</h3>
+      <ul>
+        <li><a href="sample_file.pdf">Lorem ipsum</a></li>
+        <li><a href="sample_file.pdf">Mauris faucibus</a></li>
+        <li><a href="sample_file.pdf">Eget faucibus</a></li>
+        <li><a href="sample_file.pdf">Lacus lorem</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  function toggleCollapse() {
+    let coll = document.getElementsByClassName("collapsible")
+
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active")
+        let content = this.nextElementSibling
+        content.style.display === "block" ? content.style.display = "none" : content.style.display = "block"
+      })
+    }
+  }
+
+  document.addEventListener('load', toggleCollapse())
+</script>
+</body>
+</html>
